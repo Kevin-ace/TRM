@@ -1,6 +1,7 @@
 auto
 common/conf.d/test-odoo.cfg
 custom/src/*
+!custom/src/custom_addons
 !custom/src/.gitkeep
 !custom/src/addons.yaml
 !custom/src/repos.yaml

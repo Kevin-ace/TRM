@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_tritel_root"
+              name="TRM"
+    />
+
+    <menuitem id="menu_request"
+              name="Requests"
+              parent="menu_tritel_root"
+    />
+
+    <menuitem id="menu_pending_request"
+              name="New Request"
+              parent="menu_request"
+              action="om_trm.action_tritel_requests"
+    />
+
+
+</odoo>
