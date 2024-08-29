@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebd270e6-201e-4c23-9d19-a3a6bf5d5397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/custom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/models/tritel_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/models/tritel_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/view_tritel_request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/view_tritel_request.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
   &quot;keyToString&quot;: {
     &quot;Python.trm_17Odoo.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TRM&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/kevin/Development/mytritel/custom_addons/om_trm/static/description&quot;
   }
 }</component>
