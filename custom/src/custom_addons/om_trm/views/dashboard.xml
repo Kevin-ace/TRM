@@ -1,0 +1,63 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+<!--    <data noupdate="1">-->
+
+<!--        <record id="action_employee_dashboard" model="ir.actions.act_window">-->
+<!--            <field name="name">Employee Dashboard</field>-->
+<!--            <field name="res_model">employee.dashboard</field>-->
+<!--            <field name="view_mode">dashboard</field>-->
+<!--            <field name="view_id" ref="view_employee_dashboard"/>-->
+<!--        </record>-->
+
+<!--        <record id="action_manager_dashboard" model="ir.actions.act_window">-->
+<!--            <field name="name">Manager Dashboard</field>-->
+<!--            <field name="res_model">manager.dashboard</field>-->
+<!--            <field name="view_mode">dashboard</field>-->
+<!--            <field name="view_id" ref="view_manager_dashboard"/>-->
+<!--        </record>-->
+<!--        <record id="menu_employee_dashboard" model="ir.ui.menu">-->
+<!--            <field name="name">Employee Dashboard</field>-->
+<!--            <field name="groups_id" eval="[(6, 0, [ref('om_trm.group_tritel_employee')])]"/>-->
+<!--            <field name="parent_id" ref="menu_tritel_root"/>-->
+<!--            <field name="action" ref="action_employee_dashboard"/>-->
+<!--            <field name="sequence" eval="10"/>-->
+<!--        </record>-->
+
+<!--        <record id="menu_manager_dashboard" model="ir.ui.menu">-->
+<!--            <field name="name">Manager Dashboard</field>-->
+<!--            <field name="groups_id" eval="[(6, 0, [ref('om_trm.group_tritel_manager')])]"/>-->
+<!--            <field name="parent_id" ref="menu_tritel_root"/>-->
+<!--            <field name="action" ref="action_manager_dashboard"/>-->
+<!--            <field name="sequence" eval="20"/>-->
+<!--        </record>-->
+<!--        <record id="menu_tritel_employee" model="ir.ui.menu">-->
+<!--            <field name="name">Employee Menu</field>-->
+<!--            <field name="groups_id" eval="[(6, 0, [ref('om_trm.group_tritel_employee')])]"/>-->
+<!--            <field name="parent_id" ref="base.menu_custom"/>-->
+<!--            <field name="sequence" eval="10"/>-->
+<!--        </record>-->
+
+<!--        <record id="menu_tritel_manager" model="ir.ui.menu">-->
+<!--            <field name="name">Manager Menu</field>-->
+<!--            <field name="groups_id" eval="[(6, 0, [ref('om_trm.group_tritel_manager')])]"/>-->
+<!--            <field name="parent_id" ref="base.menu_custom"/>-->
+<!--            <field name="sequence" eval="20"/>-->
+<!--        </record>-->
+
+<!--        <record id="menu_employee_requests" model="ir.ui.menu">-->
+<!--            <field name="name">Employee Requests</field>-->
+<!--            <field name="groups_id" eval="[(6, 0, [ref('om_trm.group_tritel_employee')])]"/>-->
+<!--            <field name="parent_id" ref="menu_tritel_employee"/>-->
+<!--            <field name="action" ref="action_tritel_request"/>-->
+<!--            <field name="sequence" eval="10"/>-->
+<!--        </record>-->
+
+<!--        <record id="menu_manager_dashboard" model="ir.ui.menu">-->
+<!--            <field name="name">Manager Dashboard</field>-->
+<!--            <field name="groups_id" eval="[(6, 0, [ref('om_trm.group_tritel_manager')])]"/>-->
+<!--            <field name="parent_id" ref="menu_tritel_manager"/>-->
+<!--            <field name="action" ref="action_manager_dashboard"/>-->
+<!--            <field name="sequence" eval="10"/>-->
+<!--        </record>-->
+<!--    </data>-->
+<!--</odoo>-->

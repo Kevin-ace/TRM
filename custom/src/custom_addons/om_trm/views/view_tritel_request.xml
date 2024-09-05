@@ -7,6 +7,20 @@
         <field name="model">tritel.request</field>
         <field name="arch" type="xml">
             <form>
+
+
+                <header>
+                    <button name="action_submitted" string="Submit" type="object"
+                            class="btn btn-primary o_visible_condition_submit"/>
+                    <button name="action_approved" string="Approve" type="object"
+                            class="btn btn-primary o_visible_condition_approve"/>
+                    <button name="action_reviewed" string="Review" type="object"
+                            class="btn btn-primary o_visible_condition_review"/>
+                    <button name="action_archived" string="Archive" type="object"
+                            class="btn btn-primary o_visible_condition_archive"/>
+                    <field name="state" widget="statusbar" nolabel="1"
+                           statusbar_visible="draft,submitted,approved,reviewed"/>
+                </header>
                 <div name="button_box" position="inside">
                     <button class="oe_stat_button"
                             type="object"
@@ -16,22 +30,31 @@
                         <field name="archived_count" widget="statinfo"/>
                     </button>
                 </div>
-                <header>
-                    <button name="action_submitted" string="Submit" type="object"/>
-                    <button name="action_approved" string="Approve" type="object"/>
-                    <button name="action_reviewed" string="Review" type="object"/>
-                    <button name="action_archived" string="Archive" type="object"/>
-                    <field name="state" widget="statusbar" nolabel="1"
-                           statusbar_visible="draft,submitted,approved,reviewed"/>
-                </header>
-
                 <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="amount_ksh"/>
-                        <field name="request_date"/>
-                    </group>
+                    <div class="o_form_sheet">
+                        <group>
+                            <field name="name"/>
+                            <field name="amount_ksh"/>
+                            <field name="request_date"/>
+                        </group>
+                    </div>
                 </sheet>
+
+                <notebook>
+                    <page string="Additional Information" name="additional_information">
+                        <group>
+                            <p class="o_view_nocontent_smiling_face">
+                            </p>
+                        </group>
+                    </page>
+                    <page string="storyline" name="storyline">
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </page>
+                </notebook>
+
+
                 <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user"/>
                     <field name="activity_ids"/>
@@ -60,39 +83,41 @@
         <field name="view_id" ref="view_tritel_request_tree"/>
     </record>
 
-    <menuitem id="menu_tritel_request_root" name="Tritel Requests" parent="menu_tritel_root" sequence="10"/>
-    <menuitem id="menu_tritel_request" name="Manage Requests" parent="menu_tritel_request_root"
+    <menuitem id="menu_tritel_request_root" name="Manage Requests" parent="menu_tritel_root"
               action="action_tritel_request" sequence="10"/>
+    <!--    <menuitem id="menu_tritel_request" name="Manage Requests" parent="menu_tritel_request_root"-->
+    <!--              action="action_tritel_request" sequence="10"/>-->
 
 
     <record id="view_tritel_request_kanban_overview" model="ir.ui.view">
-    <field name="name">tritel.request.kanban.overview</field>
-    <field name="model">tritel.request</field>
-    <field name="arch" type="xml">
-        <kanban default_group_by="state">
-            <field name="name"/>
-            <field name="amount_ksh"/>
-            <templates>
-                <t t-name="kanban-box">
-                    <div t-attf-class="oe_kanban_global_click o_kanban_card">
-                        <strong>
-                            <field name="name"/>
-                        </strong>
-                        <div>
-                            <field name="amount_ksh" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+        <field name="name">tritel.request.kanban.overview</field>
+        <field name="model">tritel.request</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="name"/>
+                <field name="amount_ksh"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click o_kanban_card">
+                            <strong>
+                                <field name="name"/>
+                            </strong>
+                            <div>
+                                <field name="amount_ksh" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            </div>
                         </div>
-                    </div>
-                </t>
-                <t t-name="kanban-header">
-                    <div class="oe_kanban_header">
-                        <field name="state"/>
-                    </div>
-                </t>
-            </templates>
-        </kanban>
-    </field>
-</record>
+                    </t>
+                    <t t-name="kanban-header">
+                        <div class="oe_kanban_header">
+                            <field name="state"/>
+                        </div>
+                        server_wide_modules = base,web
 
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
 
 
     <record id="action_tritel_request_kanban_overview" model="ir.actions.act_window">

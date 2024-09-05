@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebd270e6-201e-4c23-9d19-a3a6bf5d5397" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/security/security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/archive_records_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mytritel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mytritel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/__manifest__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/models/tritel_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/models/tritel_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/action_tritel_requests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/action_tritel_requests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/view_tritel_request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/custom_addons/om_trm/views/view_tritel_request.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +55,7 @@
       <recent name="$PROJECT_DIR$/custom_addons/om_trm/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/src/custom_addons" />
       <recent name="$PROJECT_DIR$/custom/src" />
       <recent name="$PROJECT_DIR$/custom_addons/om_trm" />
     </key>
@@ -80,7 +88,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-abccbe9d933a-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.20224.428" />
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
       </set>
     </attachedChunks>
   </component>

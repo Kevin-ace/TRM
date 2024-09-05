@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+    <!-- <menuitem id="menu_request"
+    action="action_tritel_requests"
+    /> -->
     <record id="action_tritel_requests" model="ir.actions.act_window">
         <field name="name">Tritel Requests</field>
         <field name="res_model">tritel.request</field>
@@ -12,5 +14,6 @@
             </p>
         </field>
     </record>
+
 
 </odoo>

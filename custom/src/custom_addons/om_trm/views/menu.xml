@@ -3,18 +3,19 @@
 
     <menuitem id="menu_tritel_root"
               name="TRM"
+              action="action_tritel_requests"
     />
 
-    <menuitem id="menu_request"
-              name="Requests"
+    <!-- <menuitem id="menu_request"
+              name=" New Requests"
               parent="menu_tritel_root"
-    />
-
-    <menuitem id="menu_pending_request"
-              name="New Request"
-              parent="menu_request"
               action="om_trm.action_tritel_requests"
-    />
+    /> -->
 
+<!--    <menuitem id="menu_new_request"-->
+<!--              name="New Request"-->
+<!--              parent="menu_request"-->
+<!--              action="om_trm.action_tritel_requests"-->
+<!--    />-->
 
 </odoo>

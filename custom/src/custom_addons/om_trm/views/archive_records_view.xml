@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.actions.act_window" id="pay_view_voucher_tree">
+        <field name="name">Archived Records</field>
+        <field name="model">Archived</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="context">{'search_state_archived_records'}</field>
+        <field name="arch" type="xml">
+            <field name="description"/>
+            <field name="date"/>
+            <field name="amount" />
+            <field name="state"/>
+        </field>
+    </record>
+</odoo>

@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_tritel_request,tritel.request,model_tritel_request,,1,1,1,1
+access_tritel_request,tritel.request,model_tritel_request,base.group_user,1,1,1,1
+access_tritel_request_employee,tritel.request employee,model_tritel_request,om_trm.group_tritel_employee,0,1,1,0
+access_tritel_request_manager,tritel.request manager,model_tritel_request,om_trm.group_tritel_manager,1,1,1,1
